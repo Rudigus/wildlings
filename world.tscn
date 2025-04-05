@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cob7e4fhlkjs5"]
+
+[ext_resource type="PackedScene" uid="uid://c7uemifs0i1q7" path="res://player.tscn" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://dcfhsm3dx2l4i" path="res://ground.tscn" id="2_fj7yv"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_f3sb7")]
+position = Vector2(315, 81)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(0.25, 0.25)
+
+[node name="Ground" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(326, 303)
+scale = Vector2(10.4956, 0.804195)
+
+[node name="Ground2" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(986, 163)
+scale = Vector2(10.4956, 0.804195)
